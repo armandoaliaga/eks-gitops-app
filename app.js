@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from EKS!',
+    message: 'Hello from EKS! - v2',
     version: process.env.APP_VERSION || 'v1',
     pod: process.env.HOSTNAME,
   });
