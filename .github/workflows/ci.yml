@@ -37,7 +37,7 @@ jobs:
       - name: Update image tag in manifests repo
         env:
           IMAGE_TAG: ${{ github.sha }}
-          PAT: ${{ secrets.MANIFESTS_PAT }}
+          PAT: ${{ secrets.MANIFEST_PAT }}
         run: |
           git clone https://x-access-token:$PAT@github.com/armandoaliaga/eks-gitops-manifests.git
           cd eks-gitops-manifests
